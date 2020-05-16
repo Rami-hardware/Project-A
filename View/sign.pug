@@ -1,0 +1,35 @@
+doctype html
+html
+    head
+        title Sign in
+        meta(chartset="utf-8")
+        link(rel="stylesheet" href="static/CSS/bootstrap.min.css" )
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet" href="static/CSS/style.css")
+    body
+        .container
+            .row    
+                .col 
+                    .card
+                        .card-body
+                            form(action="/signin" Method="POST")
+                                h1 login
+                                label.col-form-label username
+                                input(type="text" name="user" placeholder="type your username" class="customInput" name="user")
+                                label.col-form-label password
+                                input(type="password" name="pass" placeholder="type your password" class="customInput" password="pass")
+                                a(href="#" class="forget") forget your password?
+                                button.btn.btn-colored sign in
+                                p.another or sign up using :
+                                    ul.images   
+                                        each images in ["fa fa-facebook-official fa-4x Facebook","fa fa-twitter-square fa-4x twitter","fa fa-google-plus-official fa-4x google"]
+                                            li 
+                                                a(href="#")
+                                                    i(class=images)
+                                div.move
+                                    p you don't have account yet?
+                                    a(href="register" class="sign-up") sign up
+                        
+        script(src="../JS/jquery-3.4.1.min.js")
+        script(src="../JS/bootstrap.min.js")
+        script(src="../JS/Vue.js")
