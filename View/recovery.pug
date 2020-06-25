@@ -1,0 +1,19 @@
+html
+    head
+        meta(charset="utf-8")
+        title password recovery
+        each val in ["/CSS/bootstrap.min.css","https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css","/CSS/recovery.css"]
+            link(rel="stylesheet" href=val)
+    body
+        .row
+           .card
+                .card-body
+                    form(action="/recover" method="POST")
+                        div
+                            h1 recovery
+                            input(name="username" type="text"  placeholder="username" class="input-move")
+                            input(name="password" type="password"  placeholder="password" class="input-move")
+                            input(name="confirm_password" type="password" placeholder="confirm password" class="input-move" id="password1")
+                            button.btn update password
+        each val in ["/JS/jquery-3.4.1.min.js","/JS/bootstrap.min.js","https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js", "/JS/Jq-vali.js"]
+            script(src=val)

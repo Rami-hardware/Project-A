@@ -1,0 +1,19 @@
+@import 'signin.css';
+
+
+label{
+    margin-left: 10px;
+}
+input[type="email"]{
+    display: block;
+    margin: 0px 0px 30px 50px;
+}
+.btn{
+    margin: 10px 0px 15px 20px;
+}
+p{
+    text-align: center;
+}
+a{
+    margin: 10px 0px 18px 180px;
+}

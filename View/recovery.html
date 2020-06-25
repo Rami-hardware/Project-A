@@ -5,18 +5,19 @@
     <title>password recovery</title>
     <link rel="stylesheet" href="/CSS/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="/CSS/forget.css"/>
+    <link rel="stylesheet" href="/CSS/recovery.css"/>
   </head>
   <body>
     <div class="row">
       <div class="card">
         <div class="card-body">
-          <form action="/forget" method="POST">
+          <form action="/recover" method="POST">
             <div>
-              <h1>password recovery</h1>
-              <input name="send" type="email" placeholder="you lovely email"/>
-              <button class="btn">send the email</button>
-              <p>i think you have email so ?</p><a href="signin">sign in</a>
+              <h1>recovery</h1>
+              <input class="input-move" name="username" type="text" placeholder="username"/>
+              <input class="input-move" name="password" type="password" placeholder="password"/>
+              <input class="input-move" name="confirm_password" type="password" placeholder="confirm password" id="password1"/>
+              <button class="btn">update password</button>
             </div>
           </form>
         </div>
