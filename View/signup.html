@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/CSS/signup.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="card">
+        <div class="card-body">
+          <form action="/reg" method="POST" id="signup">
+            <h1>Sign up</h1>
+            <div class="row moveLeft">
+              <input class="input-move" name="firstname" type="text" placeholder="first name">
+              <input class="input-move" name="lastname" type="text" placeholder="last name">
+            </div>
+            <div class="row moveLeft">
+              <input class="input-move" name="username" type="text" placeholder="username">
+              <input class="input-move" name="email" type="email" placeholder="email">
+            </div>
+            <div class="row moveLeft">
+              <input class="input-move" name="password" type="password" placeholder="password">
+              <input class="input-move" name="confirm_password" type="password" placeholder="confirm password" id="password1">
+            </div>
+            <div class="row moveLeft">
+              <select class="inputmove input-move" name="contry" id="contry-list"></select>
+              <input class="input-move" name="city" type="text" placeholder="City">
+            </div>
+            <button class="btn btn-sign">sign up</button>
+            <p class="center">you already have account ? so look to next line</p><a class="a-center" href="signin">sign in</a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="/JS/jquery-3.4.1.min.js">  </script>
+    <script src="/JS/bootstrap.min.js">  </script>
+    <script src="/JS/data.json">  </script>
+    <script src="/JS/actions.js">  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js">  </script>
+    <script src="/JS/signup-Vali.js">  </script>
+  </body>
+</html>

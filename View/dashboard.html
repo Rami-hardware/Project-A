@@ -1,0 +1,58 @@
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>dashboard</title>
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/CSS/dashboard.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark"><a class="navbar-brand" href="#"><span class="red">r</span> <span class="blue">e</span> <span class="green">x</span> dashboard</a>
+      <div class="form-inline d-flex">
+        <div class="dropdown"><a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="userImage" src="/images/Ellipse_1@2x.png" alt="icon"/></a>
+          <form class="dropdown-menu dropdown-menu-right" action="logout" method="POST" aria-labelledby="dropdownMenuLink"><a class="dropdown-item" href="profile-edit">edit profile</a><a class="dropdown-item" href="signin">log out</a></form>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-lg-1 sidebar"> </div>
+      <div class="col-lg-11">
+        <div class="move">
+          <div class="row perf">  
+            <canvas id="per" style="width:100%; height:100%"></canvas>
+          </div>
+          <div class="row up">
+            <div class="col-3 daily">
+              <canvas id="day" style="width:100%; height:100%"></canvas>
+            </div>
+            <div class="col-3 tasks">
+              <h1>Tasks</h1>
+            </div>
+            <div class="col-3 com-tasks">
+              <canvas id="TaskC" style="width:100%; height:100%"> </canvas>
+            </div>
+            <div class="row up-table">   
+              <table class="table-style">
+                <thead>
+                  <th class="header line">id</th>
+                  <th class="header line">username</th>
+                  <th class="header line">countries</th>
+                  <th class="header line">cities</th>
+                  <th class="header line">emails</th>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/JS/jquery-3.4.1.min.js">    </script>
+    <script src="/JS/bootstrap.min.js">    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js">    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels">    </script>
+    <script src="/JS/charts.js">    </script>
+  </body>
+</html>

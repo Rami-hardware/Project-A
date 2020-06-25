@@ -1,0 +1,30 @@
+@import  "signin.css";
+h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+form{
+    padding: 30px;
+}
+select{
+    width: 179px;
+}
+
+.btn-sign{
+    width: 105%;
+}
+.a-center{
+    margin-left: 155px;
+}
+.input-move{
+   margin: 30px 66px 5px 40px;
+}
+.error{
+    margin: 30px 0px 0px 18px;
+}
+input{
+    display: inline;
+}
+.a-center{
+    margin-left: 240px;
+}

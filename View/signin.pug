@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title Sign in
+        each val in ["/CSS/bootstrap.min.css","https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css","/CSS/signin.css"]
+            link(rel="stylesheet" href=val)
+    body
+        .row
+           .card
+                .card-body
+                    form(action="/signin" method="POST" id="#app" name="log")
+                        div
+                            h1 sign in 
+                            input(type="username" value="" name="username" class="input-text" placeholder="type your username")
+                            input(type="password" value="" name="password" class="input-text" placeholder="type your password")
+                            a(href="forgetPass" class="forget") password or username?
+                            button.btn.btn-sign sign in 
+                            p.center Didn’t have account?
+                            a(href="signup" class="a-center") sign up
+        each val in ["/JS/jquery-3.4.1.min.js","/JS/bootstrap.min.js","https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js", "/JS/Jq-vali.js"]
+            script(src=val)

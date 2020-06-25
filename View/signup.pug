@@ -1,0 +1,31 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title Sign up
+        each val in ["/CSS/bootstrap.min.css","https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css","/CSS/signup.css"]
+            link(rel="stylesheet" href=val)
+    body
+        .row
+           .card
+                .card-body
+                    form(action="/reg" method="POST" id="signup")
+                        h1 Sign up
+                        .row.moveLeft
+                            for val , key in {"firstname":"first name" , "lastname":"last name"}
+                                input(name=key type="text" placeholder=val class="input-move")
+                        .row.moveLeft
+                            input(name="username" type="text"  placeholder="username" class="input-move")
+                            input(name="email"    type="email" placeholder="email" class="input-move")
+                        .row.moveLeft
+                            input(name="password" type="password"  placeholder="password" class="input-move")
+                            input(name="confirm_password" type="password" placeholder="confirm password" class="input-move" id="password1")
+                        .row.moveLeft
+                            select(name="contry" id="contry-list" class="inputmove" class="input-move")
+                            input(name="city" type="text" placeholder="City" class="input-move")
+                        button.btn.btn-sign sign up
+                        p.center you already have account ? so look to next line
+                        a(href="signin" class="a-center") sign in
+        each val , key in ["/JS/jquery-3.4.1.min.js" ,"/JS/bootstrap.min.js","/JS/data.json","/JS/actions.js","https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js","/JS/signup-Vali.js"]
+            script(src=val)   
+                                    

@@ -1,0 +1,52 @@
+*{box-sizing: border-box; border: 0px;}
+
+.card{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+form{
+    padding: 28px;
+}
+h1{
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 40px;
+}
+.input-text{
+    display: block;
+    margin-top: 10px;
+    margin-right: 100px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.btn-sign{
+    align-items: center;
+    background-color: transparent;
+    border: 1px black solid;
+    margin-left: -17px;
+    margin-top: 40px;
+    width: 120%;
+}
+.center{
+    text-align: center;
+    margin-top: 25px;
+}
+.a-center{
+    margin-left: 105px;
+}
+.error{
+    color:red;
+}
+.btn-sign:hover{
+    background-color: black;
+    color:white;
+    transition: 1s;
+}
+.forget{
+    margin-left: 154px;
+    font-size: 12px;
+    position:absolute;
+}

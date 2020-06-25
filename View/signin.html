@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/CSS/signin.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="card">
+        <div class="card-body">
+          <form action="/signin" method="POST" id="#app" name="log">
+            <div>
+              <h1>sign in </h1>
+              <input class="input-text" type="username" value="" name="username" placeholder="type your username">
+              <input class="input-text" type="password" value="" name="password" placeholder="type your password"><a class="forget" href="forgetPass">password or username?</a>
+              <button class="btn btn-sign">sign in </button>
+              <p class="center">Didn’t have account?</p><a class="a-center" href="signup">sign up</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="/JS/jquery-3.4.1.min.js"></script>
+    <script src="/JS/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="/JS/Jq-vali.js"></script>
+  </body>
+</html>

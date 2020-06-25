@@ -1,0 +1,20 @@
+html
+    head
+        meta(charset="utf-8")
+        title Sign in
+        each val in ["/CSS/bootstrap.min.css","https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css","/CSS/signin.css"]
+            link(rel="stylesheet" href=val)
+    body
+        .row
+           .card
+                .card-body
+                    form(action="/forget" method="POST" name="forget")
+                        div
+                            h1 password/ user recovery
+                            label(for="email") enter your email
+                                input(type="email" name="emai" placeholder="you lovely email")
+                                button.btn send the email
+                            p i think you have email so ?
+                            a(href="signin") sign in
+        each val in ["/JS/jquery-3.4.1.min.js","/JS/bootstrap.min.js","https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js", "/JS/Jq-vali.js"]
+            script(src=val)
