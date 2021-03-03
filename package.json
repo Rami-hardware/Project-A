@@ -28,7 +28,7 @@
     "nodemailer": "^6.4.10",
     "nodemailer-express-handlebars": "^4.0.0",
     "path": "^0.12.7",
-    "pug": "^3.0.0",
+    "pug": "^3.0.1",
     "pug-cli": "^1.0.0-alpha6",
     "vee-validate": "^3.3.0"
   }
