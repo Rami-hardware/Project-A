@@ -20,7 +20,7 @@
   "homepage": "https://github.com/Rami-hardware/Project-A#readme",
   "dependencies": {
     "apexcharts": "^3.19.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "frappe-charts": "^1.4.1",
     "jquery-validation": "^1.19.2",
     "jscharting": "^2.9.0-9",
